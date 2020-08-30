@@ -1,0 +1,126 @@
+/* IMAGEN DE PERFIL DEL USUARIO */
+
+.contenedor-imagen-perfil-usuario {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.imagen-perfil-usuario {
+    max-width: 100%;
+    border-style: solid;
+    border-width: 0.5rem;
+    border-color: gray;
+}
+
+.imagen-perfil-usuario.min {
+    height: 50px;
+    border-width: 0.1rem;
+}
+
+.imagen-perfil-usuario.med {
+    height: 150px;
+}
+
+.imagen-perfil-usuario.max {
+    height: 300px;
+}
+
+.imagen-perfil-usuario.filtro-bn,
+.imagen-perfil-usuario.transicion-bn-color {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.imagen-pefil-usuario.transicion-bn-color {
+    transition: filter 0.5s ease;
+}
+
+.imagen-perfil-usuario.transicion-bn-color:hover {
+    filter: none;
+    -webkit-filter: none;
+}
+
+.imagen-perfil-usuario.clicable {
+    transition: transform 0.5s ease, border-color 0.5s ease;
+}
+
+.imagen-perfil-usuario.clicable:hover {
+    transform: scale(1.1, 1.1);
+    border-color: darkorange;
+}
+
+.container .imagen-perfil-usuario {
+    margin-bottom: 1rem;
+}
+
+/* CONTROL MOSTRAR-OCULTAR CONTRASEÑA */
+
+.mostrar-ocultar-password.input-group .form-control {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.mostrar-ocultar-password .input-group-addon {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.75rem;
+    height: 1.25rem;
+    z-index: 999;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.mostrar-ocultar-password .input-group-addon a {
+    color: #333;
+}
+
+/* CONTROL SUBIDA DE FICHEROS */
+
+.subida-fichero .custom-file-label {
+    overflow: hidden;
+}
+
+.subida-fichero .custom-file-label:lang(es)::after {
+    content: "Examinar";
+}
+
+/* OTROS ESTILOS */
+
+.row.principal {
+    margin-top: 3rem;
+}
+
+.btn.extra,
+.container .card .btn.extra {
+    width: 15rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: transform 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+}
+
+.container .card .btn.extra {
+    font-size: 1.5rem;
+    width: auto;
+}
+
+.btn.extra:hover {
+    transform: scale(1.1, 1.1);
+    background-color: darkorange;
+    border-color: darkorange;
+}
+
+.container .card, 
+.container .card .btn,
+.container .card input {
+    font-size: 1.1rem;
+}
+
+.container .card input:-webkit-autofill::first-line {
+    font-size: 1.1rem;
+}
+  
