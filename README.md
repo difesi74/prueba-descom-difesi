@@ -21,7 +21,7 @@ En conjunto se entiende que el objetivo inicial de la prueba ha quedado sobradam
 Los ficheros más significativos desde el punto de visto de escritura de código y mejoras dentro del proyecto son:
 
 - `app/Helpers/FicherosHelper.php`
-- `app/Http/Controllers/RegisterController.php`
+- `app/Http/Controllers/Auth/RegisterController.php`
 - `app/User.php`
 - `config/personalizada.php`
 - `public/css/mis-estilos.css`
