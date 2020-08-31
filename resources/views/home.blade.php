@@ -3,11 +3,11 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center align-items-center">
-        <div class="col-md-4 text-center">
+        <div class="col-md-6 col-lg-4 text-center">
             <img src="{{ asset(Auth::user()->getRutaImagenPerfil()) }}"
                 class="imagen-perfil-usuario max rounded-circle"alt="{{ Auth::user()->name }}">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6 col-lg-8">
             <div class="card">
                 <div class="card-header">{{ __('Panel de Inicio') }}</div>
                 <div class="card-body">
